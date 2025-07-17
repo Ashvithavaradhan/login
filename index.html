@@ -1,55 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tailwind Login Page</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="min-h-screen flex items-center justify-center bg-gradient-to-b from-blue-500 to-indigo-600">
-    <div class="bg-white rounded-lg shadow-lg p-8 w-96">
-      <div class="text-center mb-6">
-        <div class="text-4xl text-indigo-600 mb-2">
-          <i class="fas fa-user-circle"></i>
-        </div>
-        <h2 class="text-2xl font-bold">Login</h2>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ashvitha | Profile page</title>
 
-      <form class="space-y-4">
-        <div>
-          <label class="block text-sm font-medium text-gray-700">Username</label>
-          <input
-            type="text"
-            placeholder="Enter Username..."
-            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-400"
-          />
-        </div>
-        <div>
-          <label class="block text-sm font-medium text-gray-700">Password</label>
-          <input
-            type="password"
-            placeholder="Enter Password..."
-            class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-400"
-          />
-        </div>
-        <div class="flex justify-between items-center text-sm text-gray-600">
-          <label class="flex items-center">
-            <input type="checkbox" class="mr-2" />
-            Remember Me
-          </label>
-          <a href="#" class="text-indigo-600 hover:underline">Forgot Password?</a>
-        </div>
-        <button
-          type="submit"
-          class="w-full flex items-center justify-center bg-indigo-600 text-white py-2 rounded-md hover:bg-indigo-700 transition"
-        >
-          <i class="fas fa-sign-in-alt mr-2"></i>
-          Login
-        </button>
-      </form>
+  <!-- Font Awesome for Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1000px;
+      width: 100%;
+      gap: 2rem;
+    }
+
+    .content {
+      max-width: 600px;
+    }
+
+    .content h3 {
+      font-size: 1.5rem;
+    }
+
+    .content h1 {
+      font-size: 3rem;
+      color: #00ffff;
+    }
+
+    .content h2 {
+      font-size: 2rem;
+      margin: 0.5rem 0;
+    }
+
+    .content h2 span {
+      color: #00ffff;
+    }
+
+    .content p {
+      margin-top: 1rem;
+      color: #ccc;
+      line-height: 1.6;
+    }
+
+    .social-icons {
+      margin-top: 1.5rem;
+    }
+
+    .social-icons a {
+      margin-right: 1rem;
+      color: #00ffff;
+      font-size: 1.5rem;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: white;
+    }
+
+    .profile-pic img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      border: 5px solid #00ffff;
+      object-fit: cover;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+      }
+
+      .content {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <h3>Hello, It's Me</h3>
+      <h1>Ashvitha</h1>
+      <h2>And I'm a <span>Web Developer</span></h2>
+      <p>
+        Passionate about crafting modern web interfaces and responsive user experiences.
+        I love turning ideas into clean and elegant code.
+      </p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
     </div>
 
-    <!-- Font Awesome Icon CDN -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  </body>
+    <div class="profile-pic">
+      <img src="https://avatars.githubusercontent.com/u/9919?v=4" alt="Cartoon Ashvitha" />
+    </div>
+  </div>
+</body>
 </html>
